@@ -9,7 +9,8 @@ describe('WeatherService', () => {
       providers: [WeatherService],
     }))
 
-  it('should be created', inject([WeatherService], (service: WeatherService) => { // () => {
+  it('should be created', inject([WeatherService], (service: WeatherService) => {
+    // () => {
     // const service: WeatherService = TestBed.get(WeatherService)
     expect(service).toBeTruthy()
   }))
