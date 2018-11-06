@@ -3,15 +3,14 @@ import { inject, TestBed } from '@angular/core/testing'
 import { WeatherService } from './weather.service'
 
 describe('WeatherService', () => {
-  beforeEach(() =>
+  beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
       providers: [WeatherService],
-    }))
+    })
+  })
 
   it('should be created', inject([WeatherService], (service: WeatherService) => {
-    // () => {
-    // const service: WeatherService = TestBed.get(WeatherService)
     expect(service).toBeTruthy()
   }))
 })
